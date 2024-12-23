@@ -1,7 +1,7 @@
 from my_file.file_show import load_file_csv
 from tkinter import *
 from tkinter import ttk
-from treewiew import *
+from treeview import *
 
 def filter_treeview(columns, rows, tree, combos, gender_vars):
     selected_lastname = combos[0].get()
