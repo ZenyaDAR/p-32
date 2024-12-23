@@ -57,6 +57,8 @@ def fillter_trewiew(colums, rows, win, combo, varCh, genres, scale, entries):
 
 
 def load_book(w,r,fr_frame, fr_farame2):
+    clear_frame(fr_frame)
+    clear_frame(fr_farame2)
     fr_farame2.grid_remove()
     fr_frame.grid()
     csv_file = "data/Books.csv"

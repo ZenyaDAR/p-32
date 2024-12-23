@@ -30,6 +30,10 @@ def main_window():
     btn_book.grid(row=0, column=0, padx=2, pady=2)
 
 
+    btn_employee_book = Button(btn_frame,text="Emploee", font = ('Times New Roman',12, 'bold'), command=lambda : load_employees(tree,root,filter_frame,filter_frame1))
+    btn_employee_book.grid(row=0, column=1, padx=2, pady=2)
+
+
     tr_frame = Frame(root,bg="#3ddee1")
     tr_frame.grid(row=2,padx=2,pady=2,sticky='nw')
     tree = ttk.Treeview(tr_frame, show='headings')
