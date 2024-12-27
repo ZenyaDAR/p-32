@@ -26,11 +26,11 @@ def main_window():
     btn_frame.grid(row=0,column=0,sticky='nw')
 
 
-    btn_book = Button(btn_frame,text="books", font = ('Times New Roman',12, 'bold'), command=lambda : load_book(tree,root,filter_frame,filter_frame1))
+    btn_book = Button(btn_frame,text="books", font = ('Times New Roman',12, 'bold'), command=lambda : load_book(tree,root,filter_frame))
     btn_book.grid(row=0, column=0, padx=2, pady=2)
 
 
-    btn_employee_book = Button(btn_frame,text="Emploee", font = ('Times New Roman',12, 'bold'), command=lambda : load_employees(tree,root,filter_frame,filter_frame1))
+    btn_employee_book = Button(btn_frame,text="Emploee", font = ('Times New Roman',12, 'bold'), command=lambda : load_employees(tree,root,filter_frame))
     btn_employee_book.grid(row=0, column=1, padx=2, pady=2)
 
 
@@ -42,10 +42,6 @@ def main_window():
 
     filter_frame = Frame(root, bg='#168b8d',pady=10)
     filter_frame.grid(row=3,column=0,sticky="nsew")
-
-
-    filter_frame1 = Frame(root, bg='#168b8d',pady=10)
-    filter_frame1.grid(row=3,column=0,sticky="nsew")
 
 
     root.columnconfigure(0,weight=1)

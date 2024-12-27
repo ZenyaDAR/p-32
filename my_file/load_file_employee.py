@@ -30,10 +30,8 @@ def filter_treeview(columns, rows, tree, combos, gender_vars):
 
     tree.grid()
 
-def load_employees(window, root, frame_main, frame_secondary):
+def load_employees(window, root, frame_main):
     clear_frame(frame_main)
-    clear_frame(frame_secondary)
-    frame_secondary.grid_remove()
     frame_main.grid()
 
     csv_file = "data/Employees.csv"
